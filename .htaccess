@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Redirect requests for index.html to the root
+RewriteCond %{THE_REQUEST} /index\.html
+RewriteRule ^ / [R=301,L]
+
+# Redirect requests for contact.html to /contact
+RewriteCond %{THE_REQUEST} /contact\.html
+RewriteRule ^contact\.html$ /contact [R=301,L]
+
+# Redirect requests for gallery.html to /gallery
+RewriteCond %{THE_REQUEST} /gallery\.html
+RewriteRule ^gallery\.html$ /gallery [R=301,L]
+
+# Rewrite URLs to remove file extensions
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(index|contact|about)?$ $1.html [L]

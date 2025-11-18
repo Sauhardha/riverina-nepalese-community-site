@@ -1,138 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riverina Nepalese Contact</title>
+    <meta name="description" content="Reach the Riverina Nepalese Community in Wagga Wagga. Send us a message, ask about events, or partner with us.">
+    <title>Riverina Nepalese Community | Contact</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['"Playfair Display"', 'serif'],
+                        body: ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        brand: '#111827',
+                        accent: '#116a51'
+                    }
+                }
+            }
+        };
+    </script>
 </head>
-<body>
 
-     <!--BOOTSTRAP NAV-->
-   <header>
-    <div class="nav-container">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand" href="#">
-                <h6 style="color: var(--white);">Riverina Nepalese Community</h6>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-lg-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-              </ul>
-              
-            </div>
-          </nav>
-    </div>
+<body class="bg-gray-50 font-body text-gray-900">
+    <header class="sticky top-0 z-[120] bg-brand/80 text-white backdrop-blur-xl border-b border-white/10 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6">
+            <nav class="flex items-center justify-between py-4">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img class="w-12 h-12" src="/images/logo.png" alt="Riverina Nepalese Community logo">
+                    <span class="font-semibold text-xl tracking-tight">Riverina Nepalese Community</span>
+                </a>
+                <div class="lg:hidden">
+                    <button id="navbar-toggle" class="rounded-lg border border-white/40 px-3 py-2 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50 transition" aria-label="Toggle navigation">
+                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="navbar-content" class="hidden w-full absolute left-0 right-0 top-full bg-brand/80 backdrop-blur-2xl border border-white/10 shadow-2xl lg:shadow-none lg:border-none lg:bg-transparent lg:backdrop-blur-none lg:static lg:flex lg:w-auto">
+                    <div class="flex flex-col lg:flex-row lg:items-center w-full lg:w-auto text-sm font-medium">
+                        <a href="index.html" class="px-6 py-3 text-center border-b border-white/10 lg:border-none lg:px-4 lg:py-2 transition-colors hover:text-rose-200">Home</a>
+                        <a href="gallery.html" class="px-6 py-3 text-center border-b border-white/10 lg:border-none lg:px-4 lg:py-2 transition-colors hover:text-rose-200">Gallery</a>
+                        <a href="contact.html" class="px-6 py-3 text-center lg:px-4 lg:py-2 transition-colors hover:text-rose-200">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    
+    <main>
+        <section class="bg-white py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <p class="text-xs font-semibold uppercase tracking-[0.4em] text-accent">Get in touch</p>
+                <h1 class="font-display text-4xl sm:text-5xl text-brand mt-4">We would love to hear from you</h1>
+                <p class="mt-6 text-lg text-gray-600 leading-relaxed">Send us a question about upcoming events, partner with the community, or simply share how the Riverina Nepalese Community can support you.</p>
+                <img class="mx-auto mt-10 h-24 w-24" src="/images/logo.png" alt="Riverina Nepalese Community mark">
+            </div>
+        </section>
 
-    <!--Contact-->
-    <section class="contact">
-        <div class="title">
-            <h2 style="margin-top: 0px;">Get in Touch</h2>
-            <p>If you have any enquiries & would like to contact us,
-                whether you are a business, organisation or just curious, please
-                feel free to send us a message.
-            </p>
-            <img width="120px" height="120px" src="/images/logo.png" alt="" style="margin-top: 30px">
-        </div>
-        <div class="contactForm" >
-            <form onsubmit="sendEmail(); reset(); return false;">
-            <div class="row">
-                <input type="text" id="fName" placeholder="First Name">
-                <input type="text" id="lName" placeholder="Last Name">
-            </div>
-            <div class="row">
-                <input type="text" id="emailAdd" placeholder="Email Address">
-                <input type="text" id="mobileNo" placeholder="Mobile Number">
-            </div>
-            <div class="row2">
-                <textarea id="message" placeholder="Message"></textarea>
-            </div>
-            <div class="row2">
-                <input type="submit" value="send" class="btn"></input>
-            </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-        <div class="foot-container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Website</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="#" onclick="return false;">Copyright ©2022 Riverina Nepalese Community. Designed By Sauhardha Pandey.</a></li>
-                    </ul>
+        <section class="bg-gray-900 py-20 text-white">
+            <div class="max-w-5xl mx-auto px-6 space-y-16">
+                <div class="grid gap-6 md:grid-cols-3">
+                    <article class="rounded-3xl bg-white/10 border border-white/20 backdrop-blur-xl p-6 shadow-xl">
+                        <p class="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-200">Email</p>
+                        <h2 class="font-display text-2xl mt-3">Official inbox</h2>
+                        <p class="mt-4 text-sm text-gray-200">We reply to most messages within a few days.</p>
+                        <a href="mailto:rncwagga2016@gmail.com" class="mt-6 inline-flex items-center gap-2 text-gray-200 font-semibold">
+                            rncwagga2016@gmail.com
+                            <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </article>
+                    <article class="rounded-3xl bg-white/10 border border-white/20 backdrop-blur-xl p-6 shadow-xl">
+                        <p class="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-200">Location</p>
+                        <h2 class="font-display text-2xl mt-3">Wagga Wagga</h2>
+                        <p class="mt-4 text-sm text-gray-200">We meet across Riverina venues for cultural festivals, sport, and volunteering.</p>
+                        <span class="mt-6 inline-flex items-center gap-2 text-gray-200"><i class="fas fa-location-dot"></i> NSW, Australia</span>
+                    </article>
+                    <article class="rounded-3xl bg-white/10 border border-white/20 backdrop-blur-xl p-6 shadow-xl">
+                        <p class="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-200">Community</p>
+                        <h2 class="font-display text-2xl mt-3">Partner with us</h2>
+                        <p class="mt-4 text-sm text-gray-200">Businesses, councils, and performers can co-create programs with our committee.</p>
+                        <a href="mailto:rncwagga2016@gmail.com?subject=Community%20Partnership" class="mt-6 inline-flex items-center gap-2 text-gray-200 font-semibold">Start a conversation<i class="fas fa-heart"></i></a>
+                    </article>
                 </div>
 
-                <div class="footer-col">
-                    <h4>Our Contacts</h4>
-                    <ul>
-                        <li><a href="#" style="text-transform: lowercase;" onclick="return false;">Email: rncwagga2016@gmail.com</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/www.nepalesecommunity.riv.com.au/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/in/sauhardha-pandey-b4b626232/"><i class="fab fa-linkedin-in"></i></a>
+                <div class="rounded-[32px] border border-white/15 bg-white/5 backdrop-blur-2xl shadow-2xl p-10">
+                    <div class="grid gap-10 md:grid-cols-2">
+                        <div>
+                            <p class="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-200">Message us</p>
+                            <h2 class="font-display text-3xl mt-3">Share your idea or request</h2>
+                            <p class="mt-5 text-sm text-gray-200 leading-relaxed">Have something to share? We'd love to hear from you—reach out via email and let us know how we can help or collaborate.</p>
+                            <ul class="mt-6 space-y-3 text-sm text-gray-300">
+                                <li class="flex items-center gap-3"><span class="h-2 w-2 rounded-full bg-rose-300"></span>Festival & event enquiries</li>
+                                <li class="flex items-center gap-3"><span class="h-2 w-2 rounded-full bg-rose-300"></span>Volunteering & sponsorship</li>
+                                <li class="flex items-center gap-3"><span class="h-2 w-2 rounded-full bg-rose-300"></span>Media or school visits</li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <a href="mailto:rncwagga2016@gmail.com" class="group relative inline-flex items-center justify-center w-48 h-48">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-rose-500 to-rose-400 opacity-75 blur-lg group-hover:opacity-100 transition duration-500 animate-pulse"></div>
+                                <div class="relative bg-rose-500 hover:bg-rose-400 rounded-full w-44 h-44 flex items-center justify-center shadow-2xl shadow-rose-500/50 transition duration-300 transform group-hover:scale-105">
+                                    <div class="text-center">
+                                        <i class="fas fa-envelope text-5xl text-white mb-3"></i>
+                                        <p class="text-white font-semibold text-sm mt-2">Send us an email</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand text-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
+            <div>
+                <p class="text-sm uppercase tracking-[0.4em] text-accent">Website</p>
+                <ul class="mt-4 space-y-2 text-gray-300">
+                    <li><a href="index.html" class="transition-colors hover:text-rose-200">Home</a></li>
+                    <li><a href="contact.html" class="transition-colors hover:text-rose-200">Contact Us</a></li>
+                    <li><a href="gallery.html" class="transition-colors hover:text-rose-200">Gallery</a></li>
+                </ul>
+                <p class="mt-4 text-sm text-gray-400">© 2022 Riverina Nepalese Community.</p>
+            </div>
+            <div>
+                <p class="text-sm uppercase tracking-[0.4em] text-accent">Email</p>
+                <a href="mailto:rncwagga2016@gmail.com" class="mt-4 inline-block text-white transition-colors hover:text-rose-200">
+                    rncwagga2016@gmail.com
+                </a>
+            </div>
+            <div>
+                <p class="text-sm uppercase tracking-[0.4em] text-accent">Follow us</p>
+                <div class="mt-4 flex gap-3">
+                    <a href="https://www.facebook.com/www.nepalesecommunity.riv.com.au/" class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center transition hover:bg-rose-500/30" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/sauhardha-pandey-b4b626232/" class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center transition hover:bg-rose-500/30" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "RNC.contact.host@gmail.com",
-                Password : "cwhqqjhrhqwwsybu",
-                To : 'rncwagga2016@gmail.com',
-                From : document.getElementById("emailAdd").value,
-                Subject : "New RNC Contact Enquiry",
-                Body : "First Name: " + document.getElementById("fName").value
-                + "<br> Last Name: " + document.getElementById("lName").value
-                + "<br> Email: " + document.getElementById("emailAdd").value
-                + "<br> Mobile No: " + document.getElementById("mobileNo").value
-                + "<br> Message: " + document.getElementById("message").value
-            }).then(
-        message => alert("Message Sent Successfully")
-        );
-        }
+        const navToggle = document.getElementById('navbar-toggle');
+        const navContent = document.getElementById('navbar-content');
+        navToggle?.addEventListener('click', () => navContent?.classList.toggle('hidden'));
     </script>
-
 </body>
+
 </html>

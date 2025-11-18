@@ -1,309 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The galleries page has a compilation of images of our community 
-    highlights that we wish to share, 
-    enjoy the collection of our splendid memories spent together."> 
-    <title>Riverina Nepalese Gallery</title>
+    <meta name="description"
+        content="Browse the Riverina Nepalese Community gallery filled with festival highlights, cultural events, and memories captured in Wagga Wagga.">
+    <title>Riverina Nepalese Gallery | Community Moments</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['"Playfair Display"', 'serif'],
+                        body: ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        brand: '#111827',
+                        accent: '#116a51'
+                    }
+                }
+            }
+        };
+    </script>
 </head>
-<body>
 
-     <!--BOOTSTRAP NAV-->
-   <header>
-    <div class="nav-container">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand" href="#">
-                <h6 style="color: var(--white);">Riverina Nepalese Community</h6>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-lg-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-              </ul>
-              
-            </div>
-          </nav>
-    </div>
+<body class="bg-gray-50 font-body text-gray-900">
+    <header class="sticky top-0 z-[120] bg-brand/80 text-white backdrop-blur-xl border-b border-white/10 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6">
+            <nav class="flex items-center justify-between py-4">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img class="w-12 h-12" src="/images/logo.png" alt="Riverina Nepalese Community logo">
+                    <span class="font-semibold text-xl tracking-tight">Riverina Nepalese Community</span>
+                </a>
+                <div class="lg:hidden">
+                    <button id="navbar-toggle"
+                        class="rounded-lg border border-white/40 px-3 py-2 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50 transition"
+                        aria-label="Toggle navigation">
+                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="navbar-content"
+                    class="hidden w-full absolute left-0 right-0 top-full bg-brand/80 backdrop-blur-2xl border border-white/10 shadow-2xl lg:shadow-none lg:border-none lg:bg-transparent lg:backdrop-blur-none lg:static lg:flex lg:w-auto">
+                    <div class="flex flex-col lg:flex-row lg:items-center w-full lg:w-auto text-sm font-medium">
+                        <a href="index.html"
+                            class="px-6 py-3 text-center border-b border-white/10 lg:border-none lg:px-4 lg:py-2 transition-colors hover:text-rose-200">Home</a>
+                        <a href="gallery.html"
+                            class="px-6 py-3 text-center border-b border-white/10 lg:border-none lg:px-4 lg:py-2 transition-colors hover:text-rose-200">Gallery</a>
+                        <a href="contact.html"
+                            class="px-6 py-3 text-center lg:px-4 lg:py-2 transition-colors hover:text-rose-200">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <div class="title" style="margin-top: 100px;">
-            <h2 style="text-align: center;">Relive Community Memories</h2>
-            <p>Enjoy the images from our festivals & activities. Here, you will find some of our most memorable moments together.</p>
-            <img width="150px" height="150px" src="/images/logo.png" alt="" style="margin-top: 20px;">
-        </div>
-    </section>
-
-
-    <div class="container">
-        <div class="row mt-5">
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G31.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G31.jpg" width="100%" height="100%" alt="">
-                </a>
+    <main>
+        <section class="bg-white py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <p class="text-xs font-semibold uppercase tracking-[0.4em] text-accent">Gallery</p>
+                <h1 class="font-display text-4xl sm:text-5xl text-brand mt-4">Relive Nepalese Community Memories</h1>
+                <p class="mt-6 text-lg text-gray-600 leading-relaxed">Enjoy the images from our festivals & activities in
+                    Wagga Wagga. Here, you will find some of our most memorable moments together.</p>
+                <img class="mx-auto mt-10 h-24 w-24" src="/images/logo.png"
+                    alt="Riverina Nepalese Community emblem">
             </div>
- 
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G30.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G30.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
+        </section>
 
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G29.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G29.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G28.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G28.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G27.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G27.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G26.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G26.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G25.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G25.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G24.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G24.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G23.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G23.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G22.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G22.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G21.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G21.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G20.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G20.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G19.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G19.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G18.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G18.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G17.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G17.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G16.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G16.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G15.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G15.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G14.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G14.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G13.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G13.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G12.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G12.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G11.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G11.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G10.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G10.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G9.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G9.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G8.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G8.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G7.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G7.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-
-
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G6.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G6.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G5.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G5.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G4.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G4.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G3.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G3.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G2.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G2.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-            <div class="item col-sm-6 col-md-4 mb-3">
-                <a href="/RNC GAL/G1.jpg" class="fancybox" data-fancybox="gallery1">
-                    <img src="/RNC GAL/G1.jpg" width="100%" height="100%" alt="">
-                </a>
-            </div>
-
-        </div>
-
-
-    </div>
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-        <div class="foot-container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Website</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="#" onclick="return false;">Copyright ©2022 Riverina Nepalese Community. Designed By Sauhardha Pandey.</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Our Contacts</h4>
-                    <ul>
-                        <li><a href="#" style="text-transform: lowercase;" onclick="return false;">Email: rncwagga2016@gmail.com</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/www.nepalesecommunity.riv.com.au/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/in/sauhardha-pandey-b4b626232/"><i class="fab fa-linkedin-in"></i></a>
+        <section id="gallery" class="bg-gray-900 py-20 text-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex items-center justify-between flex-wrap gap-4">
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-200">Community highlights</p>
+                        <h2 class="font-display text-3xl mt-3">Moments we cherish</h2>
                     </div>
+                    <span class="text-sm text-gray-300">Tap an image to view it full size.</span>
+                </div>
+                <div id="gallery-grid" class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand text-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
+            <div>
+                <p class="text-sm uppercase tracking-[0.4em] text-accent">Website</p>
+                <ul class="mt-4 space-y-2 text-gray-300">
+                    <li><a href="index.html" class="transition-colors hover:text-rose-200">Home</a></li>
+                    <li><a href="contact.html" class="transition-colors hover:text-rose-200">Contact Us</a></li>
+                    <li><a href="gallery.html" class="transition-colors hover:text-rose-200">Gallery</a></li>
+                </ul>
+                <p class="mt-4 text-sm text-gray-400">© 2022 Riverina Nepalese Community.</p>
+            </div>
+            <div>
+                <p class="text-sm uppercase tracking-[0.4em] text-accent">Email</p>
+                <a href="mailto:rncwagga2016@gmail.com" class="mt-4 inline-block text-white transition-colors hover:text-rose-200">
+                    rncwagga2016@gmail.com
+                </a>
+            </div>
+            <div>
+                <p class="text-sm uppercase tracking-[0.4em] text-accent">Follow us</p>
+                <div class="mt-4 flex gap-3">
+                    <a href="https://www.facebook.com/www.nepalesecommunity.riv.com.au/"
+                        class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center transition hover:bg-rose-500/30"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/sauhardha-pandey-b4b626232/"
+                        class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center transition hover:bg-rose-500/30"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-    
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        const navToggle = document.getElementById('navbar-toggle');
+        const navContent = document.getElementById('navbar-content');
+        navToggle?.addEventListener('click', () => navContent?.classList.toggle('hidden'));
+
+        const galleryItems = [
+            { src: '/RNC GAL/G52.jpeg', alt: 'Nepali Wagga Fusion 2023 Bridge' },
+            { src: '/RNC GAL/G51.jpeg', alt: 'Nepali Fusion Namaste' },
+            { src: '/RNC GAL/G50.jpeg', alt: 'Nepali Dress Fusion' },
+            { src: '/RNC GAL/G49.jpeg', alt: 'Nepali Fusion Black Dress' },
+            { src: '/RNC GAL/G48.jpeg', alt: 'Nepali Wagga Group Fusion' },
+            { src: '/RNC GAL/G47.jpeg', alt: 'Nepali Fusion Group' },
+            { src: '/RNC GAL/G46.jpeg', alt: 'Nepali Fusion Red Dress' },
+            { src: '/RNC GAL/G45.jpeg', alt: 'Nepali Wagga Fusion 2023 Couple' },
+            { src: '/RNC GAL/G44.jpeg', alt: 'Nepali Wagga Picnic 2023' },
+            { src: '/RNC GAL/G43.jpeg', alt: 'Nepali Wagga Holi 2023 Photo' },
+            { src: '/RNC GAL/G42.jpeg', alt: 'Nepalese Holi 2023' },
+            { src: '/RNC GAL/G41.jpeg', alt: 'Nepalese Wagga Holi' },
+            { src: '/RNC GAL/G40.jpeg', alt: 'Deusi Bhailo Nepalese Wagga' },
+            { src: '/RNC GAL/G39.jpeg', alt: 'Nepalese Deusi Bhailo Festival 2022' },
+            { src: '/RNC GAL/G38.jpeg', alt: 'Deusi Bhailo 2022' },
+            { src: '/RNC GAL/G37.jpeg', alt: 'Nepali Deusi Group' },
+            { src: '/RNC GAL/G36.jpeg', alt: 'Wagga Wagga Nepalese Dumplings' },
+            { src: '/RNC GAL/G35.jpeg', alt: 'Nepalese Momo Stall' },
+            { src: '/RNC GAL/G34.jpeg', alt: 'Lake Albert Nepalese' },
+            { src: '/RNC GAL/G33.jpeg', alt: 'Lake Albert Nepali Selfie' },
+            { src: '/RNC GAL/G32.jpeg', alt: 'Lake Albert Walk' },
+            { src: '/RNC GAL/G31.jpg', alt: 'Fusion 2022 Nepalese News Article' },
+            { src: '/RNC GAL/G30.jpg', alt: 'Wagga Wagga Nepalese Tihar Group' },
+            { src: '/RNC GAL/G29.jpg', alt: 'Traditional Nepalese Dresses Women' },
+            { src: '/RNC GAL/G28.jpg', alt: 'Wagga Wagga Nepalese Music Maadal' },
+            { src: '/RNC GAL/G27.jpg', alt: 'Traditional Nepalese Hat' },
+            { src: '/RNC GAL/G26.jpg', alt: 'Traditional Nepalese Dress' },
+            { src: '/RNC GAL/G25.jpg', alt: 'Nepalese Singer Wagga Wagga' },
+            { src: '/RNC GAL/G24.jpg', alt: 'Red Nepalese Dress' },
+            { src: '/RNC GAL/G23.jpg', alt: 'Holi Festival Wagga Green' },
+            { src: '/RNC GAL/G22.jpg', alt: 'Holi Festival Wagga Four' },
+            { src: '/RNC GAL/G21.jpg', alt: 'Holi Festival Wagga 2022' },
+            { src: '/RNC GAL/G20.jpg', alt: 'Holi Festival Nepali Group 2022' },
+            { src: '/RNC GAL/G19.jpg', alt: 'Nepalese Artist Wagga Wagga' },
+            { src: '/RNC GAL/G18.jpg', alt: 'Wagga Wagga Painter Krishna' },
+            { src: '/RNC GAL/G17.jpg', alt: 'Nepali Child Painting' },
+            { src: '/RNC GAL/G16.jpg', alt: 'Community Paintings' },
+            { src: '/RNC GAL/G15.jpg', alt: 'Teaching Nepalese Kids Painting' },
+            { src: '/RNC GAL/G14.jpg', alt: 'Nepalese Painting Lesson' },
+            { src: '/RNC GAL/G13.jpg', alt: 'Nepalese Painting in Wagga' },
+            { src: '/RNC GAL/G12.jpg', alt: 'Nepalese Community Activity Painting' },
+            { src: '/RNC GAL/G11.jpg', alt: 'Painter Krishna Wagga' },
+            { src: '/RNC GAL/G10.jpg', alt: 'Nepali Kids Painting' },
+            { src: '/RNC GAL/G9.jpg', alt: 'Kids Learning to Paint' },
+            { src: '/RNC GAL/G8.jpg', alt: 'More Community Paintings' },
+            { src: '/RNC GAL/G7.jpg', alt: 'Nepali Picnic Wagga Wagga' },
+            { src: '/RNC GAL/G6.jpg', alt: 'Nepali Sports Wagga Wagga' },
+            { src: '/RNC GAL/G5.jpg', alt: 'Nepalese Fusion Group' },
+            { src: '/RNC GAL/G4.jpg', alt: 'Nepalese Fusion Stall 2019' },
+            { src: '/RNC GAL/G3.jpg', alt: 'Nepali Momo' },
+            { src: '/RNC GAL/G2.jpg', alt: 'Nepalese Fusion Stall' },
+            { src: '/RNC GAL/G1.jpg', alt: 'Nepali Momo Stall 2016' }
+        ];
+
+        const galleryGrid = document.getElementById('gallery-grid');
+        galleryItems.forEach((item, index) => {
+            const card = document.createElement('figure');
+            card.className = 'group overflow-hidden rounded-3xl bg-white/10 border border-white/20 backdrop-blur-xl shadow-xl transition hover:border-rose-200/70 hover:bg-rose-500/10';
+
+            const link = document.createElement('a');
+            link.href = item.src;
+            link.dataset.fancybox = 'gallery';
+            link.dataset.caption = item.alt;
+            link.className = 'block';
+
+            const img = document.createElement('img');
+            img.src = item.src;
+            img.alt = item.alt;
+            img.className = 'h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105';
+            link.appendChild(img);
+
+            const figcaption = document.createElement('figcaption');
+            figcaption.className = 'px-5 py-4 flex items-center justify-between text-sm text-gray-200';
+            figcaption.innerHTML = `<span>${item.alt}</span><span class="text-xs text-rose-200">${index + 1}</span>`;
+
+            card.appendChild(link);
+            card.appendChild(figcaption);
+            galleryGrid.appendChild(card);
+        });
+
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            Thumbs: false,
+        });
+    </script>
 </body>
 
-
-
 </html>
-
-
