@@ -15,4 +15,4 @@ RewriteRule ^gallery\.html$ /gallery [R=301,L]
 # Rewrite URLs to remove file extensions
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(index|contact|about)?$ $1.html [L]
+RewriteRule ^(index|contact|about|gallery)?$ $1.html [L]
